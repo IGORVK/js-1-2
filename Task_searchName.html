@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	
+	<title>JS1-2</title>
+	
+</head>
+<body>
+	<script >
+
+	    
+	     function searchName(search){
+            var bool = false;
+              for(var i=0; i<=4; i++){
+    
+        if (arrName[i]===search) {
+            alert(search + ", Вы успешно вошли");
+            bool = true;
+            return bool;
+           }
+                   
+           } 
+           return bool;
+       }
+       
+       
+       
+       
+      
+	    var numName = 1;
+	    var arrName = [];
+	  for(var i=0; i<=4; i++){
+	
+	     arrName[i] =  prompt("Введите "+ numName + "-е имя в массив из пяти имен:" ); 
+	     ++numName;
+	  }
+	   console.log(arrName);
+	    
+	    var search = prompt('Введите имя для поиска в созданном списке имен:');
+	    
+	   if (searchName(search)==false){
+            alert("Введенное имя пользователя не существует в созданном списке имен");
+      }
+	    
+	</script>
+</body>
+</html>
